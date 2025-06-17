@@ -1,0 +1,63 @@
+section.gifts {
+  border-radius: 20px;
+
+  background-image: url(../img/gifts/bg-garland.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.gifts h1 {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  font: var(--action-small);
+  color: var(--static-white);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.tab {
+  padding: 12px 20px;
+
+  cursor: pointer;
+
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
+}
+@media (hover: hover){
+  .tab:not(.tab--active):hover {
+    background-color: var(--static-white20);
+  }
+
+}
+
+.tab--active {
+  cursor: default;
+  
+  background-color: var(--static-white20);
+}
+
+@media (max-width: 489px){
+  .tab{
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 393px){
+  .tabs {
+    gap: 0;
+  }
+  .tab{
+  padding: 12px 8px;
+}
+    
+}

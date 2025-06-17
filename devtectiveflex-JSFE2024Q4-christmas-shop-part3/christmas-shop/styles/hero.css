@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../img/hero/bg-ball.png), url(../img/bg-snow.png);
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 426px;
+  padding: 60px 0;
+
+  color: var(--static-white);
+}
+

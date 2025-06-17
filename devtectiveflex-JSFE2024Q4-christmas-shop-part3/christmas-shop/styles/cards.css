@@ -1,0 +1,167 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+
+  grid-auto-rows: 1fr;
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  max-width: 310px;
+  border-radius: 20px;
+
+  background-color: var(--content-background);
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  text-decoration: none;
+  color: var(--dark);
+}
+
+@media(hover: hover) {
+  .card__wrapper:hover .card__name {
+    color: var(--primary);
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__heading {
+  flex-grow: 1;
+
+  padding: 20px;
+  height: max-content;
+
+  border-radius: 20px;
+
+  background-color: var(--static-white);
+}
+
+.card__name {
+  font: var(--header3);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+}
+
+.card__category {
+  margin-bottom: 8px;
+  
+  font: var(--header4);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.card__category--work {
+  color: var(--tag-purple)
+}
+
+.card__category--health {
+  color: var(--tag-green)
+}
+
+.card__category--harmony {
+  color: var(--tag-pink)
+}
+
+.modal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100svw;
+  height: 100svh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-color: var(--overlay);
+  overflow: hidden;
+}
+
+.card--modal {
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  max-width: 400px;
+  align-items: center;
+}
+
+.card__description {
+  margin-bottom: 8px;
+}
+
+.superpowers__header {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font: var(--header4);
+}
+
+.superpowers__list {
+  margin: 0;
+  padding: 0;
+  font: var(--paragraph);
+  list-style: none;
+}
+
+.superpower {
+  display: flex;
+  gap: 12px;
+}
+
+.superpower-container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.superpower__snowlake-level {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.snowlake {
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.snowlake--inactive {
+  opacity: 0.1;
+}
+
+.close-button--modal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.close-button--modal:hover {
+  opacity: 0.6;
+}
+
+.hidden { 
+  display: none;
+}

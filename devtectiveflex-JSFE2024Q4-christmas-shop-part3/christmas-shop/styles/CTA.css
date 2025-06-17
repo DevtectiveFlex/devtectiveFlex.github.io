@@ -1,0 +1,71 @@
+.CTA-section {
+  background-image: url(../img/CTA/bg-forest.png), url(../img/bg-snow.png);
+}
+
+.CTA-wrapper {
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 426px;
+
+  text-align: center;
+}
+
+.CTA-section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 60px 0;
+
+  color: var(--static-white);
+}
+
+.CTA-section .link-button {
+  margin-bottom: 20px;
+}
+
+.CTA-section .caption {
+  margin-bottom: 8px;
+}
+
+.timer {
+  display: flex;
+
+  padding: 8px 12px 12px;
+
+  border-radius: 20px;
+
+  color: var(--static-white);
+
+  background-color: var(--static-white40);
+
+}
+
+.timer__counter {
+  position: relative;
+
+  width: 80px;
+}
+
+.timer__description {
+  font: var(--header4);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.timer__clockface {
+  font: var(--header2);
+  letter-spacing: 3px;
+}
+
+.timer .timer__counter:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  top: 16px;
+  left: 80px;
+
+  height: 20px;
+
+  border-right: 1px solid var(--static-white40);
+}
